@@ -1,0 +1,15 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="UporabniskiVmesniki_Klemencic.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="ImageBytes" Type="System.String" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="objave" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="prijatelji" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+  </Settings>
+</SettingsFile>

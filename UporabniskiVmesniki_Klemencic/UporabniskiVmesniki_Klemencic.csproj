@@ -1,0 +1,56 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Slike\**" />
+    <EmbeddedResource Remove="Slike\**" />
+    <None Remove="Slike\**" />
+    <Page Remove="Slike\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="f10ff70a7155e5ab666bcdd1b45b726d.jpg" />
+    <None Remove="logo.png" />
+    <None Remove="logo2.png" />
+    <None Remove="logotip.png" />
+    <None Remove="Screenshot_1.png" />
+    <None Remove="sunset.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="logo.png" />
+    <Resource Include="logo2.png" />
+    <Resource Include="logotip.png" />
+    <Resource Include="Screenshot_1.png" />
+    <Resource Include="sunset.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="OsebniPodatkiAlternate.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Properties\Settings.Designer.cs">
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+
+</Project>
